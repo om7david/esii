@@ -1,0 +1,1818 @@
+// General Styles
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 0px;
+  color: black;
+  border: 2px solid white;
+  padding: 1.5vh;
+  font-family: "Roboto Slab", serif;
+  background-color: lightgray;
+
+  &.btn-white {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+  }
+  &.btn-warning {
+    background-color: #fccc00;
+    border-color: #fccc00;
+    color: black;
+  }
+  &.btn-black {
+    background-color: black;
+    border-color: black;
+    color: white;
+  }
+
+  &.btn-outline-b {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+  }
+
+  &.btn-outline-w {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: normal;
+  }
+}
+
+.flex {
+  display: flex;
+  &.flex-between {
+    justify-content: space-between;
+  }
+}
+
+.paginator {
+  justify-content: center;
+  display: flex;
+  i {
+    color: black;
+  }
+  span {
+    margin: 0px 10px;
+  }
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+
+
+//////////// Header
+
+header {
+  padding: 2vh 15px 2vh 15px;
+  img {
+    width: auto;
+  }
+  li {
+    font-family: "Roboto", sans-serif;
+    a {
+      color: black;
+    }
+    &:nth-last-child(1){
+      display: none;
+    }
+  }
+}
+
+// Top slider home
+
+.slide {
+  .carousel-caption {
+    width: 30%;
+    margin-left: 0px;
+    top: 15%;
+  }
+  h1 {
+    color: #fccc00;
+    font-size: 3.3vw;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 0.4em;
+    text-align: left;
+    line-height: 1.5em;
+    font-weight: bold;
+  }
+  .input-group {
+    margin-top: 5vh;
+    input {
+      border: 4px solid white;
+      background-color: transparent;
+      padding: 1.2em;
+      font-size: 1.7vw;
+      font-weight: bold;
+    }
+
+    .form-control {
+      color: white;
+      &::placeholder {
+        color: white;
+      }
+      &:focus {
+        background-color: transparent;
+      }
+    }
+    button {
+      background-color: #fccc00;
+      border: none;
+      font-size: 2vw;
+      color: white;
+      padding-left: 1vw;
+      padding-right: 1vw;
+    }
+  }
+}
+
+.products-top {
+  margin-top: 5vh;
+  .title {
+    background-image: url("../assets/black-bar.jpg");
+    color: white;
+    -webkit-box-shadow: -855px 0px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -855px 0px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: -855px 0px 0px 0px rgba(0, 0, 0, 1);
+  }
+  button {
+    border: none;
+    background-color: #fccc00;
+    width: 100%;
+    color: black;
+    padding: 0.8vh;
+    font-size: 2vw;
+  }
+}
+
+.products-grid {
+  margin-top: 5vh;
+
+  .row {
+    .col-6 {
+      .row:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  fieldset {
+    border: 4px solid black;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    legend {
+      background-color: #fccc00;
+      width: auto;
+      padding: 0px 1vw;
+      font-family: "Roboto Slab", serif;
+      font-size: 1vw;
+      margin-left: -23px;
+    }
+    &.big {
+      img {
+        margin: auto;
+        display: block;
+        width: auto;
+        height: 358px;
+      }
+      p {
+        font-size: 1.2vw;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+    }
+    &.small {
+      img {
+        margin: auto;
+        display: block;
+        width: auto;
+        height: 124.5px;
+      }
+      p {
+        font-size: 0.8vw;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-left: 33px;
+      }
+    }
+    a {
+      background-color: black;
+      color: white;
+      float: right;
+      position: relative;
+      right: -18px;
+      padding: 4px 9px;
+      bottom: 17px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+/////// Full Banner
+//////////////////////
+.full-banner {
+  background-color: #fccc00;
+  padding: 16vh;
+  .container {
+    background-image: url("../assets/blue-water.jpg");
+    background-size: cover;
+    padding: 20px 40px;
+    .row {
+      background-color: #fccc00;
+      height: 240px;
+
+      .col-6:nth-child(2) {
+        text-align: center;
+      }
+    }
+  }
+
+  span {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 27px;
+    letter-spacing: 0.4vw;
+    position: relative;
+    top: -32px;
+    left: -55px;
+  }
+  h2 {
+    color: black;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: -15px;
+  }
+  h3 {
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 0px;
+  }
+  hr {
+    height: 8px;
+    background-color: black;
+    border: none;
+    width: 50%;
+    margin-left: 0px;
+    margin-left: 85px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  a {
+    background-color: black;
+    color: white;
+    margin-left: 100px;
+    padding: 5px 15px;
+    font-style: italic;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  img {
+    width: auto;
+    max-height: 430px;
+    margin-top: -95px;
+  }
+}
+
+//////// Donde Comprar
+/////////////////////////
+.donde-comprar {
+  .container {
+    div {
+      position: relative;
+      top: 60px;
+      left: -78px;
+      margin-bottom: -142px;
+      background-color: black;
+      color: white;
+      width: 24vw;
+      padding-left: 4vw;
+      padding-top: 4vh;
+      letter-spacing: 0.8vw;
+      -webkit-box-shadow: -23vw 0px 0px 0px rgba(0, 0, 0, 1);
+      -moz-box-shadow: -23vw 0px 0px 0px rgba(0, 0, 0, 1);
+      box-shadow: -23vw 0px 0px 0px rgba(0, 0, 0, 1);
+    }
+  }
+  img {
+    margin-left: auto;
+    width: 89%;
+    display: block;
+  }
+  button {
+    margin-top: 0px;
+    margin-bottom: -22px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1vw;
+  }
+}
+
+///////// Formacion
+////////////////////////////
+.formacion-title {
+  background-color: black;
+  margin-top: 5vh;
+  .row {
+    background-color: black;
+    [class^="col"] {
+      background-color: white;
+    }
+    h1 {
+      letter-spacing: 0.2em;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.formacion-content {
+  margin-top: 5vh;
+  margin-bottom: calc(5vh + 16px);
+  img {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  }
+  h2 {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 20px;
+  }
+  p {
+    font-family: "Roboto";
+    font-style: italic;
+    text-align: center;
+  }
+  span {
+    border: 2px solid black;
+    padding: 3px;
+    margin: auto;
+    display: table;
+    font-weight: bold;
+  }
+  .col-4:hover {
+    img {
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .container:nth-child(2) {
+    border-bottom: 4px solid black;
+    .btn {
+      margin-top: 5vh;
+      width: 100%;
+      position: relative;
+      bottom: -18px;
+    }
+  }
+}
+
+///////// Support
+//////////////////////////////
+.support {
+  background-image: url("../assets/dummy.jpg");
+  background-size: cover;
+  padding: 7vh;
+
+  .container {
+    border: 5px solid #fccc00;
+    padding: 5vh;
+
+    h1 {
+      color: white;
+      text-align: center;
+      letter-spacing: 3.2vw;
+      font-weight: bold;
+    }
+  }
+  .options {
+    text-align: center;
+    margin-top: -33px;
+    button {
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 0.8vh 2vh;
+      font-size: 1.3vw;
+      i {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+//////// Contact
+//////////////////////////////////
+
+.contact-bottom {
+  background-color: #e9eaec;
+
+  [class^="col"] {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+  }
+
+  input,
+  textarea {
+    border: 0px;
+    font-style: italic;
+  }
+
+  button {
+    letter-spacing: 0.4em;
+  }
+
+  h2 {
+    letter-spacing: 0.2em;
+    margin-bottom: 4vh;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    li {
+      margin-bottom: 12px;
+      font-style: italic;
+      i {
+        font-size: 23px;
+        margin-right: 10px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  iframe {
+    width: 93%;
+    height: 18vh;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .invert {
+    background-color: black;
+    color: white;
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    h2 {
+      font-size: 2.5em;
+      letter-spacing: 0.4em;
+      margin-bottom: 8vh;
+    }
+
+    p {
+      margin-bottom: 4vh;
+      font-size: 1.2em;
+    }
+  }
+}
+
+// FOOTER
+////////////////////////////////////////////////////
+
+footer {
+  background-color: black;
+  padding: 7vh;
+
+  h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1vw;
+    color: white;
+    font-weight: normal;
+  }
+
+  ul.nav {
+    margin-top: 3vh;
+    a {
+      color: #999999;
+      border: 1px solid #999999;
+      margin-right: 13px;
+    }
+  }
+
+  a {
+    color: #e9eaee;
+    font-size: 0.7vw;
+    &:hover {
+      color: #e9eaee;
+    }
+  }
+
+  p {
+    color: #e9eaee;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-size: 0.7vw;
+  }
+  ul {
+    list-style: none;
+    padding-left: 31px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+////////////////////// PRODUCTS //////////////////////////////
+//////////////////////////////////////////////////////////////
+
+// Only por Products page
+body.products {
+  .full-banner {
+    padding: 11vh;
+    .container {
+      padding: 35px 70px;
+      .row {
+        height: 190px;
+      }
+    }
+    h2,
+    h3,
+    hr {
+      margin-left: 35px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 27px;
+      letter-spacing: 0.1vw;
+    }
+    span {
+      top: 60px;
+      left: 270px;
+    }
+    img {
+      max-height: 380px;
+    }
+    hr {
+      margin-left: 20px;
+    }
+  }
+
+  .fluid-left {
+    &:before {
+      left: -999em;
+      background-color: inherit;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 999em;
+      top: 0;
+      bottom: 0;
+    }
+    .flex {
+      justify-content: space-evenly;
+    }
+  }
+
+  ul.side-menu {
+    color: white;
+    list-style: none;
+    margin-top: 4vw;
+    li {
+      label {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Roboto Slab", serif;
+        input {
+          margin-top: 7px;
+        }
+      }
+      ul {
+        list-style: none;
+        padding-left: 25px;
+        li {
+          font-family: "Roboto", sans-serif;
+          font-style: italic;
+          font-size: 14px;
+          label {
+            input {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      &.title {
+        label {
+          span {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &:after {
+              right: -989em;
+              background-color: white;
+              content: "";
+              display: inline-block;
+              width: 7em;
+              height: 3px;
+              margin-left: 10px;
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .products-content {
+    padding-top: 4vw;
+    padding-left: 30px;
+
+    .gallery {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+      .item {
+        width: 170px;
+        margin-bottom: 20px;
+        a {
+          color: black;
+          text-decoration: none;
+          img {
+            width: 170px;
+            height: auto;
+            border: 2px solid black;
+          }
+          h2 {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mas vendido
+.ventas {
+  margin-top: 4vw;
+  overflow: hidden;
+
+  .container-fluid {
+    background-color: #e9eaec;
+    padding: 2vw 0vw;
+
+    .title {
+      margin-bottom: 30px;
+      h2 {
+        letter-spacing: 1.4vw;
+        text-align: center;
+        margin-bottom: 0px;
+        line-height: 1.4vw;
+        font-weight: bold;
+        &:before {
+          left: -999em;
+          background-color: black;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 999em;
+          top: 0;
+          bottom: 0;
+        }
+        &:after {
+          right: -999em;
+          background-color: black;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 999em;
+          top: 0;
+          bottom: 0;
+        }
+      }
+    }
+
+    .carousel {
+      .col-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .btn {
+          width: 43px;
+          border: 4px solid black;
+
+          i {
+            font-weight: bold;
+          }
+          &[data-slide="prev"] {
+            position: relative;
+            left: -33px;
+          }
+
+          &[data-slide="next"] {
+            margin-left: auto;
+            position: relative;
+            left: 33px;
+          }
+        }
+      }
+    }
+
+    .carousel-item {
+      img {
+        width: 150px;
+        &:after {
+          background-color: #efefef;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 1px;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, 0);
+          width: 50px;
+        }
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 20px;
+      }
+
+      .col-3 {
+        //border-right: 2px solid black;
+        &:after {
+          background-color: black;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 70px;
+          right: 0%;
+          position: absolute;
+          transform: translate(0%, -100%);
+          width: 3px;
+        }
+        &:nth-child(4) {
+          &:after {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  // Soporte
+
+  .soporte {
+    background-color: #fccc00;
+    padding: 2vw;
+
+    h1 {
+      font-size: 1.7vw;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 0.4vw;
+      font-weight: bold;
+    }
+
+    .input-group {
+      margin-top: 5vh;
+      max-width: 20vw;
+      margin: auto;
+
+      input {
+        border: 4px solid black;
+        background-color: white;
+        padding: 1.2em;
+        font-size: 1.3vw;
+        font-weight: bold;
+      }
+
+      .form-control {
+        color: black;
+        &::placeholder {
+          color: black;
+        }
+        &:focus {
+          background-color: white;
+        }
+      }
+      button {
+        background-color: black;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+}
+
+body.product-detail {
+  // Lo Quiero
+  .quiero {
+    .container-fluid {
+      background-color: #fccc00;
+      padding: 4vh;
+    }
+    h1 {
+      color: white;
+      text-shadow: 4px 4px black;
+      letter-spacing: 1.5vw;
+      font-weight: bold;
+    }
+    button {
+      text-align: center;
+      letter-spacing: 0.8vw;
+      padding-left: 1vw;
+
+      box-shadow: 5px 6px 0 -1px #fccc00, 5px 6px 0 2px black;
+      position: relative;
+    }
+  }
+
+  // Detalle de producto
+  .detalle {
+    padding: 4vw;
+    padding-bottom: 0px;
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          img {
+            max-width: 300px;
+            margin: auto;
+          }
+        }
+      }
+      .col-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .btn {
+          width: 43px;
+          border: 4px solid black;
+        }
+      }
+      .carousel-indicators {
+        margin-bottom: 0px;
+        position: relative;
+        top: 20px;
+        li {
+          background-color: gray;
+          height: 5px;
+        }
+      }
+    }
+    h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.5vw;
+    }
+    .aditional-info {
+      border: 4px solid black;
+      margin-top: 3vw;
+      .col-4 {
+        border-right: 4px solid black;
+        padding: 1vw;
+      }
+      .col-8 {
+        padding: 1vw;
+      }
+    }
+  }
+}
+
+/////////////////////////// BUY //////////////////////////////
+//////////////////////////////////////////////////////////////
+
+body.buy {
+  .contactanos {
+    background-color: black;
+    background-image: url(../assets/where-buy-header.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 3vw;
+    h1 {
+      color: #fccc00;
+      font-size: 3rem;
+      font-family: "Roboto Slab", serif;
+      letter-spacing: 0.4em;
+      text-align: left;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
+    .input-group {
+      margin-top: 5vh;
+      input {
+        border: 4px solid white;
+        background-color: transparent;
+        padding: 1em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+      }
+
+      .form-control {
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+        &:focus {
+          background-color: transparent;
+        }
+      }
+      button {
+        background-color: #fccc00;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+
+  .sidebar {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+
+    .form-control {
+      border: 2px solid #000000;
+    }
+  }
+
+  .content {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    .top {
+      background-color: black;
+      color: white;
+      h4 {
+        padding-left: 15px;
+        margin-bottom: 0;
+        line-height: 2rem;
+        font-weight: 400;
+      }
+      .search {
+        background-color: black;
+        color: white;
+        border: none;
+        border-left: 2px solid white;
+        padding: 5px 15px;
+      }
+    }
+    .companies {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 1.5vw;
+
+      .company {
+        width: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+        h1 {
+          font-size: 1rem;
+          font-family: "Roboto", sans-serif;
+          margin-bottom: 0px;
+        }
+        i {
+          font-family: "Roboto", sans-serif;
+          display: block;
+        }
+        span.horario1 {
+          display: block;
+          font-family: "Roboto", sans-serif;
+        }
+        span.horario2 {
+          display: block;
+          font-family: "Roboto", sans-serif;
+        }
+        h2 {
+          font-size: 0.9rem;
+          font-family: "Roboto", sans-serif;
+          margin-bottom: 0px;
+        }
+        a {
+          color: #fccc00;
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-style: italic;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .paginator {
+      margin-top: 20px;
+    }
+  }
+
+  // Vende con nosotros
+
+  .vende {
+    background-color: #fccc00;
+    padding: 3.5vw;
+    .form-control {
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      background-color: white;
+      font-size: 2.5rem;
+      letter-spacing: 0.5vw;
+      color: black;
+      box-shadow: 8px 10px 0 -4px #fccc00, 8px 11px 0 0px black;
+      &::placeholder {
+        color: #000000;
+      }
+    }
+    button {
+      background-color: black;
+      color: white;
+      padding: 0.4rem 1.5rem;
+      border: none;
+      font-size: 2.5rem;
+      position: relative;
+      top: 11px;
+      left: 8px;
+    }
+  }
+}
+
+///////////////////////// LEARN //////////////////////////////
+//////////////////////////////////////////////////////////////
+
+body.learn {
+  .contactanos {
+    background-color: black;
+    background-image: url(../assets/where-buy-header.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 3vw;
+    h1 {
+      color: #fccc00;
+      font-size: 3rem;
+      font-family: "Roboto Slab", serif;
+      letter-spacing: 0.4em;
+      text-align: left;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
+    .input-group {
+      margin-top: 5vh;
+      input {
+        border: 4px solid white;
+        background-color: transparent;
+        padding: 1em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+      }
+
+      .form-control {
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+        &:focus {
+          background-color: transparent;
+        }
+      }
+      button {
+        background-color: #fccc00;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+
+  // Tutoriales
+  .tutoriales {
+    margin-top: -10px;
+    overflow: hidden;
+
+    .container-fluid {
+      background-color: #fccc00;
+      padding: 2vw 0vw 4vw 0vw;
+
+      .title {
+        margin-bottom: 30px;
+
+        h2 {
+          letter-spacing: 1.4vw;
+          text-align: center;
+          margin-bottom: 0px;
+          line-height: 1.4vw;
+          font-weight: bold;
+          &:before {
+            left: -5em;
+            background-color: black;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 8em;
+            top: 0;
+            bottom: 0;
+          }
+          &:after {
+            right: -5em;
+            background-color: black;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 8em;
+            top: 0;
+            bottom: 0;
+          }
+        }
+      }
+
+      .carousel {
+        .col-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .btn {
+            width: 43px;
+            border: 4px solid black;
+
+            i {
+              font-weight: bold;
+            }
+            &[data-slide="prev"] {
+              position: relative;
+              left: -33px;
+            }
+
+            &[data-slide="next"] {
+              margin-left: auto;
+              position: relative;
+              left: 33px;
+            }
+          }
+        }
+      }
+
+      .carousel-item {
+        img {
+          max-width: 275px;
+          &:after {
+            background-color: #efefef;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 50px;
+          }
+        }
+        h3 {
+          font-size: 0.9rem;
+          margin-top: 20px;
+          text-align: left;
+          font-weight: bold;
+          padding: 0px 15px;
+        }
+
+        p {
+          text-align: left;
+          font-size: 0.8rem;
+          padding: 0px 15px;
+        }
+
+        .col-4 {
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  // Consejos
+  .consejos {
+    margin-top: -46px;
+    overflow: hidden;
+
+    .container-fluid {
+      padding: 0vw 0vw 2vw 0vw;
+
+      .title {
+        margin-bottom: 30px;
+        .col-9 {
+          border: 4px solid black;
+          padding: 1.5vw;
+          h2 {
+            letter-spacing: 1.4vw;
+            text-align: center;
+            margin-bottom: 0px;
+            line-height: 1.4vw;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .carousel {
+        .col-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .btn {
+            width: 43px;
+            border: 4px solid black;
+            color: white;
+            background-color: black;
+            padding: 9px;
+            position: relative;
+            top: -70px;
+
+            i {
+              font-weight: bold;
+            }
+            &[data-slide="prev"] {
+              position: relative;
+              left: -33px;
+              &:before {
+                left: -100em;
+                background-color: black;
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100em;
+                top: -4px;
+                bottom: 0;
+                height: 50px;
+              }
+            }
+
+            &[data-slide="next"] {
+              margin-left: auto;
+              position: relative;
+              left: 33px;
+              &:after {
+                right: -100em;
+                background-color: black;
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100em;
+                top: -4px;
+                bottom: 0;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+
+      .carousel-item {
+        img {
+          max-width: 275px;
+          &:after {
+            background-color: #efefef;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 50px;
+          }
+        }
+        h3 {
+          font-size: 0.9rem;
+          margin-top: 20px;
+          text-align: center;
+          font-weight: bold;
+          padding: 0px 15px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 0.8rem;
+          padding: 0px 15px;
+        }
+
+        .col-4 {
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  // Videos
+  .videos {
+    margin-top: 40 px;
+    background-color: #eaebed;
+
+    .container-fluid {
+      padding: 0vw 0vw 2vw 0vw;
+      .title {
+        margin-bottom: 30px;
+        position: relative;
+        top: -40px;
+        .col-12 {
+          padding: 1.5vw;
+          background-color: black;
+          h2 {
+            letter-spacing: 1.4vw;
+            text-align: center;
+            margin-bottom: 0px;
+            line-height: 1.4vw;
+            font-weight: bold;
+            color: white;
+          }
+        }
+      }
+
+      .carousel {
+        .col-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .btn {
+            width: 43px;
+            border: 4px solid black;
+            padding: 9px;
+            position: relative;
+            top: -70px;
+
+            i {
+              font-weight: bold;
+            }
+            &[data-slide="prev"] {
+              position: relative;
+              left: -33px;
+            }
+
+            &[data-slide="next"] {
+              margin-left: auto;
+              position: relative;
+              left: 33px;
+            }
+          }
+        }
+      }
+
+      .carousel-item {
+        img {
+          max-width: 275px;
+          &:after {
+            background-color: #efefef;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 50px;
+          }
+        }
+        h3 {
+          font-size: 0.9rem;
+          margin-top: 20px;
+          text-align: center;
+          font-weight: bold;
+          padding: 0px 15px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 0.8rem;
+          padding: 0px 15px;
+        }
+
+        .col-4 {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////// SUPPORT ////////////////////////////
+//////////////////////////////////////////////////////////////
+
+body.tec-support {
+  .contactanos {
+    background-color: black;
+    background-image: url(../assets/where-buy-header.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 3vw;
+    h1 {
+      color: #fccc00;
+      font-size: 3rem;
+      font-family: "Roboto Slab", serif;
+      letter-spacing: 0.4em;
+      text-align: left;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
+    .input-group {
+      margin-top: 5vh;
+      input {
+        border: 4px solid white;
+        background-color: transparent;
+        padding: 1em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+      }
+
+      .form-control {
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+        &:focus {
+          background-color: transparent;
+        }
+      }
+      button {
+        background-color: #fccc00;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+
+  // Tutoriales
+  .tips {
+    margin-top: 0px;
+    overflow: hidden;
+
+    .container-fluid {
+      background-color: #eaebed;
+      padding: 2vw 0vw 2vw 0vw;
+
+      .title {
+        margin-bottom: 30px;
+
+        h2 {
+          letter-spacing: 1.4vw;
+          text-align: center;
+          margin-bottom: 0px;
+          line-height: 1.4vw;
+          font-weight: bold;
+          &:before {
+            left: -5em;
+            background-color: black;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 6em;
+            top: 0;
+            bottom: 0;
+          }
+          &:after {
+            right: -5em;
+            background-color: black;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 6em;
+            top: 0;
+            bottom: 0;
+          }
+        }
+      }
+
+      .carousel {
+        .col-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .btn {
+            width: 43px;
+            border: 4px solid black;
+
+            i {
+              font-weight: bold;
+            }
+            &[data-slide="prev"] {
+              position: relative;
+              left: -33px;
+            }
+
+            &[data-slide="next"] {
+              margin-left: auto;
+              position: relative;
+              left: 33px;
+            }
+          }
+        }
+      }
+
+      .carousel-item {
+        img {
+          max-width: 275px;
+          &:after {
+            background-color: #efefef;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 50px;
+          }
+        }
+        h3 {
+          font-size: 0.9rem;
+          margin-top: 20px;
+          text-align: left;
+          font-weight: bold;
+          padding: 0px 15px;
+        }
+
+        p {
+          text-align: left;
+          font-size: 0.8rem;
+          padding: 0px 15px;
+        }
+
+        .col-4 {
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  .manuales {
+    overflow: hidden;
+    margin-top: 50px;
+    .title {
+      margin-bottom: 30px;
+
+      h2 {
+        letter-spacing: 1.4vw;
+        text-align: center;
+        margin-bottom: 0px;
+        line-height: 1.4vw;
+        font-weight: bold;
+        &:before {
+          left: -52em;
+          background-color: black;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 60em;
+          top: 0;
+          bottom: 0;
+        }
+        &:after {
+          right: -52em;
+          background-color: black;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 60em;
+          top: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .filter {
+      justify-content: space-around;
+      margin-top: 20px;
+      .form-group {
+        width: 40%;
+        margin-bottom: 0;
+        border: 2px solid black;
+      }
+      .btn-warning {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        padding: 0px 20px;
+      }
+    }
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2vw;
+      .item {
+        width: 46%;
+        margin-bottom: 30px;
+        border-bottom: 2px solid black;
+        padding-bottom: 1vw;
+        h1 {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 0.9rem;
+          line-height: 1.3rem;
+        }
+        a {
+          color: #fccc00;
+          font-weight: 500;
+          letter-spacing: 0.1vw;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .garantias {
+    background-image: url("../assets/dummy.jpg");
+    padding: 2vw;
+    h1 {
+      color: white;
+      text-align: center;
+      letter-spacing: 0.4vw;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .input-group {
+      margin-top: 5vh;
+      max-width: 20vw;
+      margin: auto;
+
+      input {
+        background-color: white;
+        padding: 1.2em;
+        font-size: 1.3vw;
+        font-weight: bold;
+      }
+
+      .form-control {
+        color: black;
+        &::placeholder {
+          color: black;
+        }
+        &:focus {
+          background-color: white;
+        }
+      }
+      button {
+        background-color: #fccc00;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+
+  .faq {
+    .left {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+      h1 {
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-size: 2rem;
+        display: inline-block;
+        letter-spacing: 0.4vw;
+      }
+      .accordion {
+        .card {
+          border: none;
+          .card-header {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            button {
+              font-family: "Roboto", sans-serif;
+              background-color: transparent;
+              padding: 0;
+              text-decoration: none;
+            }
+          }
+          .card-body {
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .right {
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+
+      h2 {
+        text-align: center;
+        letter-spacing: 0.4vw;
+        font-size: 3rem;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 2vw;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        color: #c3c4c9;
+        font-size: 0.8rem;
+        margin-bottom: 2vw;
+      }
+      button {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        letter-spacing: 0.4vw;
+      }
+    }
+  }
+
+  .soporte {
+    background-color: #fccc00;
+    padding: 2vw;
+
+    h1 {
+      font-size: 1.7vw;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 0.4vw;
+      font-weight: bold;
+    }
+
+    .input-group {
+      margin-top: 5vh;
+      max-width: 20vw;
+      margin: auto;
+
+      input {
+        border: 4px solid black;
+        background-color: white;
+        padding: 1.2em;
+        font-size: 1.3vw;
+        font-weight: bold;
+      }
+
+      .form-control {
+        color: black;
+        &::placeholder {
+          color: black;
+        }
+        &:focus {
+          background-color: white;
+        }
+      }
+      button {
+        background-color: black;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+}
