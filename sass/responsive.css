@@ -66,8 +66,34 @@
     display: flex;
   }
   header.container-fluid li:nth-last-child(1) {
-    background-color: #c1c2c8;
+    background-color: white;
     padding: 0 2vw;
+    width: 65px;
+  }
+  header.container-fluid li:nth-last-child(1) a {
+    z-index: 20;
+  }
+  header.container-fluid li ul.submenu-show {
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: white;
+  }
+  header.container-fluid li ul.submenu-show li {
+    display: block;
+    padding-left: 20px;
+  }
+  header.container-fluid li ul.submenu-show li a {
+    color: #878787;
+  }
+  header.container-fluid li ul.submenu-show li:nth-child(1) {
+    margin-top: 75px;
   }
 
   .carousel {
@@ -154,9 +180,9 @@
     width: 100vw;
     overflow-x: scroll;
     margin-top: 6vw;
+    padding-top: 10px;
   }
   .products-grid.mobile fieldset {
-    padding: 5vw;
     width: 100vw;
     margin-left: 5vw;
     margin-bottom: 5vw;
@@ -171,7 +197,7 @@
     padding: 3px 2vw;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    margin-left: -34px;
+    margin-left: -11px;
     margin-right: 0px;
     white-space: nowrap;
     font-weight: 500;
@@ -183,14 +209,13 @@
   .products-grid.mobile fieldset p {
     font-size: 1rem;
   }
-  .products-grid.mobile fieldset a {
-    background-color: black;
+  .products-grid.mobile fieldset i {
     color: white;
     float: right;
     position: relative;
-    right: -38px;
-    padding: 4px 9px;
-    bottom: 25px;
+    right: -16px;
+    padding: 9px;
+    bottom: 120px;
     margin-bottom: -40px;
   }
 
@@ -307,6 +332,11 @@
     width: 100vw;
     margin-right: 5vw;
     margin-bottom: 5vw;
+  }
+  .formacion.mobile .items .item a {
+    color: black;
+    text-decoration: none;
+    display: block;
   }
   .formacion.mobile .items .item h2 {
     font-size: 1.2rem;

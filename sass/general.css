@@ -157,11 +157,16 @@ header li:nth-last-child(1) {
 }
 .products-grid fieldset legend {
   background-color: #fccc00;
+  color: black;
   width: auto;
   padding: 0px 1vw;
   font-family: "Roboto Slab", serif;
   font-size: 1vw;
   margin-left: -23px;
+  margin-top: -13px;
+}
+.products-grid fieldset.big a {
+  text-decoration: none;
 }
 .products-grid fieldset.big img {
   margin: auto;
@@ -174,6 +179,10 @@ header li:nth-last-child(1) {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 0px;
+  color: black;
+}
+.products-grid fieldset.small a {
+  text-decoration: none;
 }
 .products-grid fieldset.small img {
   margin: auto;
@@ -187,14 +196,15 @@ header li:nth-last-child(1) {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-left: 33px;
+  color: black;
 }
-.products-grid fieldset a {
+.products-grid fieldset i {
   background-color: black;
   color: white;
   float: right;
   position: relative;
   right: -18px;
-  padding: 4px 9px;
+  padding: 9px;
   bottom: 17px;
 }
 .products-grid fieldset:hover {
@@ -318,6 +328,10 @@ header li:nth-last-child(1) {
 .formacion-content {
   margin-top: 5vh;
   margin-bottom: calc(5vh + 16px);
+}
+.formacion-content a {
+  text-decoration: none;
+  color: black;
 }
 .formacion-content img {
   width: 100%;
@@ -491,33 +505,70 @@ footer .flex {
 }
 
 body.products .full-banner {
-  padding: 11vh;
+  background-color: #fccc00;
+  padding: 10vh;
 }
 body.products .full-banner .container {
-  padding: 35px 70px;
+  background-image: url("../assets/blue-water.jpg");
+  background-size: cover;
+  padding: 20px 40px;
 }
 body.products .full-banner .container .row {
-  height: 190px;
+  background-color: #fccc00;
+  height: 240px;
 }
-body.products .full-banner h2,
-body.products .full-banner h3,
-body.products .full-banner hr {
-  margin-left: 35px;
-}
-body.products .full-banner h2 {
-  font-size: 1.5rem;
-  margin-top: 27px;
-  letter-spacing: 0.1vw;
+body.products .full-banner .container .row .col-6:nth-child(2) {
+  text-align: center;
 }
 body.products .full-banner span {
-  top: 60px;
-  left: 270px;
+  background-color: white;
+  color: black;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: 0.4vw;
+  position: relative;
+  top: -32px;
+  left: -55px;
 }
-body.products .full-banner img {
-  max-height: 380px;
+body.products .full-banner h2 {
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 0.4vw;
+  margin-left: 100px;
+  margin-bottom: 0px;
+  margin-top: -15px;
+}
+body.products .full-banner h3 {
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 0px;
 }
 body.products .full-banner hr {
-  margin-left: 20px;
+  height: 8px;
+  background-color: black;
+  border: none;
+  width: 50%;
+  margin-left: 0px;
+  margin-left: 85px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+body.products .full-banner a {
+  background-color: black;
+  color: white;
+  margin-left: 100px;
+  padding: 5px 15px;
+  font-style: italic;
+  margin-top: 15px;
+  display: inline-block;
+}
+body.products .full-banner img {
+  width: auto;
+  max-height: 430px;
+  margin-top: -95px;
 }
 body.products .fluid-left:before {
   left: -999em;
@@ -588,6 +639,7 @@ body.products .products-content .gallery .item {
 body.products .products-content .gallery .item a {
   color: black;
   text-decoration: none;
+  display: block;
 }
 body.products .products-content .gallery .item a img {
   width: 170px;
@@ -658,6 +710,11 @@ body.products .products-content .gallery .item a h2 {
   margin-left: auto;
   position: relative;
   left: 33px;
+}
+.ventas .container-fluid .carousel-item a {
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 .ventas .container-fluid .carousel-item img {
   width: 150px;
@@ -877,6 +934,11 @@ body.buy .content .companies .company {
   padding: 10px;
   margin-bottom: 10px;
 }
+body.buy .content .companies .company a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
 body.buy .content .companies .company h1 {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -899,7 +961,7 @@ body.buy .content .companies .company h2 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0px;
 }
-body.buy .content .companies .company a {
+body.buy .content .companies .company span:last-child {
   color: #fccc00;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1040,6 +1102,11 @@ body.learn .tutoriales .container-fluid .carousel .col-1 .btn[data-slide=next] {
   position: relative;
   left: 33px;
 }
+body.learn .tutoriales .container-fluid .carousel-item a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
 body.learn .tutoriales .container-fluid .carousel-item img {
   max-width: 275px;
 }
@@ -1138,6 +1205,11 @@ body.learn .consejos .container-fluid .carousel .col-1 .btn[data-slide=next]:aft
   bottom: 0;
   height: 50px;
 }
+body.learn .consejos .container-fluid .carousel-item a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
 body.learn .consejos .container-fluid .carousel-item img {
   max-width: 275px;
 }
@@ -1214,6 +1286,11 @@ body.learn .videos .container-fluid .carousel .col-1 .btn[data-slide=next] {
   margin-left: auto;
   position: relative;
   left: 33px;
+}
+body.learn .videos .container-fluid .carousel-item a {
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 body.learn .videos .container-fluid .carousel-item img {
   max-width: 275px;
@@ -1348,6 +1425,11 @@ body.tec-support .tips .container-fluid .carousel .col-1 .btn[data-slide=next] {
   margin-left: auto;
   position: relative;
   left: 33px;
+}
+body.tec-support .tips .container-fluid .carousel-item a {
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 body.tec-support .tips .container-fluid .carousel-item img {
   max-width: 275px;
