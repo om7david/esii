@@ -82,6 +82,21 @@ header li:nth-last-child(1) {
   display: none;
 }
 
+.social-float ul {
+  flex-direction: column;
+  display: inline-block;
+  position: fixed;
+  top: 45vh;
+  z-index: 10;
+}
+.social-float ul li {
+  margin-bottom: 1px;
+}
+.social-float ul li a {
+  background-color: black;
+  color: white;
+}
+
 .slide .carousel-caption {
   width: 30%;
   margin-left: 0px;
@@ -1471,26 +1486,26 @@ body.tec-support .manuales .title h2 {
   letter-spacing: 1.4vw;
   text-align: center;
   margin-bottom: 0px;
-  line-height: 1.4vw;
+  line-height: 25px;
   font-weight: bold;
 }
 body.tec-support .manuales .title h2:before {
-  left: -52em;
+  left: -40vw;
   background-color: black;
   content: "";
   display: block;
   position: absolute;
-  width: 60em;
+  width: 50vw;
   top: 0;
   bottom: 0;
 }
 body.tec-support .manuales .title h2:after {
-  right: -52em;
+  right: -40vw;
   background-color: black;
   content: "";
   display: block;
   position: absolute;
-  width: 60em;
+  width: 50vw;
   top: 0;
   bottom: 0;
 }

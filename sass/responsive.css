@@ -70,7 +70,7 @@
     padding: 0 2vw;
     width: 65px;
   }
-  header.container-fluid li:nth-last-child(1) a {
+  header.container-fluid li:nth-last-child(1) a.nav-link {
     z-index: 20;
   }
   header.container-fluid li ul.submenu-show {
@@ -106,7 +106,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 13vw;
-    margin-top: -6px;
+    margin-top: -3px;
   }
   .mobile.support-top h1 {
     color: #fccc00;
@@ -1214,10 +1214,9 @@ body.tec-support .tips.mobile > .container .carousel .carousel-item p {
   }
   body.tec-support .manuales .title .col-9 h2 {
     font-size: 1.1rem;
-    padding: 10px;
   }
   body.tec-support .manuales .title .col-9 h2:before {
-    left: -6em;
+    left: -7em;
     background-color: black;
     content: "";
     display: block;
@@ -1228,7 +1227,7 @@ body.tec-support .tips.mobile > .container .carousel .carousel-item p {
     height: 1rem;
   }
   body.tec-support .manuales .title .col-9 h2:after {
-    right: -6em;
+    right: -7em;
     background-color: black;
     content: "";
     display: block;

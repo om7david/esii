@@ -78,7 +78,7 @@
         background-color: white;
         padding: 0 2vw;
         width: 65px;
-        a{
+        a.nav-link{
           z-index: 20;
         }
       }
@@ -118,7 +118,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 13vw;
-    margin-top: -6px;
+    margin-top: -3px;
     h1 {
       color: #fccc00;
       font-family: "Roboto", sans-serif;
@@ -1338,10 +1338,8 @@
           margin: auto;
           h2 {
             font-size: 1.1rem;
-            padding: 10px;
-
             &:before {
-              left: -6em;
+              left: -7em;
               background-color: black;
               content: "";
               display: block;
@@ -1352,7 +1350,7 @@
               height: 1rem;
             }
             &:after {
-              right: -6em;
+              right: -7em;
               background-color: black;
               content: "";
               display: block;
