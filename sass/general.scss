@@ -1917,3 +1917,138 @@ body.tec-support {
     }
   }
 }
+
+
+///////////////////////// ARTICLE ////////////////////////////
+//////////////////////////////////////////////////////////////
+body.article{
+  .contactanos {
+    background-color: black;
+    background-image: url(../assets/where-buy-header.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 3vw;
+    h1 {
+      color: #fccc00;
+      font-size: 3rem;
+      font-family: "Roboto Slab", serif;
+      letter-spacing: 0.4em;
+      text-align: left;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
+    .input-group {
+      margin-top: 5vh;
+      input {
+        border: 4px solid white;
+        background-color: transparent;
+        padding: 1em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+      }
+
+      .form-control {
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+        &:focus {
+          background-color: transparent;
+        }
+      }
+      button {
+        background-color: #fccc00;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+
+  .article{
+    padding: 3rem 0;
+    h1{
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+    }
+    h2{
+      font-size: 1.6rem;
+    }
+    h3{
+      font-size: 1.3rem;
+    }
+
+    
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0rem;
+  th,
+  td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-top: 1px solid #dee2e6;
+  }
+
+
+  .table {
+    background-color: transparent;
+  }
+}
+
+  }
+
+  .soporte {
+    background-color: #fccc00;
+    padding: 2vw;
+
+    h1 {
+      font-size: 1.7vw;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 0.4vw;
+      font-weight: bold;
+    }
+
+    .input-group {
+      margin-top: 5vh;
+      max-width: 20vw;
+      margin: auto;
+
+      input {
+        border: 4px solid black;
+        background-color: white;
+        padding: 1.2em;
+        font-size: 1.3vw;
+        font-weight: bold;
+      }
+
+      .form-control {
+        color: black;
+        &::placeholder {
+          color: black;
+        }
+        &:focus {
+          background-color: white;
+        }
+      }
+      button {
+        background-color: black;
+        border: none;
+        font-size: 2vw;
+        color: white;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+    }
+  }
+}

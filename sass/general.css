@@ -1689,4 +1689,121 @@ body.tec-support .soporte .input-group button {
   padding-right: 1vw;
 }
 
+body.article .contactanos {
+  background-color: black;
+  background-image: url(../assets/where-buy-header.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 3vw;
+}
+body.article .contactanos h1 {
+  color: #fccc00;
+  font-size: 3rem;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.4em;
+  text-align: left;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+body.article .contactanos .input-group {
+  margin-top: 5vh;
+}
+body.article .contactanos .input-group input {
+  border: 4px solid white;
+  background-color: transparent;
+  padding: 1em;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+body.article .contactanos .input-group .form-control {
+  color: white;
+}
+body.article .contactanos .input-group .form-control::placeholder {
+  color: white;
+}
+body.article .contactanos .input-group .form-control:focus {
+  background-color: transparent;
+}
+body.article .contactanos .input-group button {
+  background-color: #fccc00;
+  border: none;
+  font-size: 2vw;
+  color: white;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+body.article .article {
+  padding: 3rem 0;
+}
+body.article .article h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+body.article .article h2 {
+  font-size: 1.6rem;
+}
+body.article .article h3 {
+  font-size: 1.3rem;
+}
+body.article .article .table {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0rem;
+}
+body.article .article .table th,
+body.article .article .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+body.article .article .table thead th {
+  vertical-align: bottom;
+  border-top: 1px solid #dee2e6;
+}
+body.article .article .table .table {
+  background-color: transparent;
+}
+body.article .soporte {
+  background-color: #fccc00;
+  padding: 2vw;
+}
+body.article .soporte h1 {
+  font-size: 1.7vw;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 0.4vw;
+  font-weight: bold;
+}
+body.article .soporte .input-group {
+  margin-top: 5vh;
+  max-width: 20vw;
+  margin: auto;
+}
+body.article .soporte .input-group input {
+  border: 4px solid black;
+  background-color: white;
+  padding: 1.2em;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+body.article .soporte .input-group .form-control {
+  color: black;
+}
+body.article .soporte .input-group .form-control::placeholder {
+  color: black;
+}
+body.article .soporte .input-group .form-control:focus {
+  background-color: white;
+}
+body.article .soporte .input-group button {
+  background-color: black;
+  border: none;
+  font-size: 2vw;
+  color: white;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 /*# sourceMappingURL=general.css.map */
