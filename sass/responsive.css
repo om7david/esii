@@ -9,7 +9,181 @@
 */
 @media (min-width: 768px) and (max-width: 1024px) {
   .mobile {
+    display: none;
+  }
+
+  body .full-banner {
+    padding: 5vh;
+  }
+  body .full-banner h2,
+body .full-banner h3,
+body .full-banner a,
+body .full-banner hr {
+    margin-left: 40px;
+  }
+  body .full-banner img {
+    width: auto;
+    max-height: 358px;
+    margin-top: -54px;
+  }
+  body .products-grid fieldset.big img {
+    height: 308px;
+  }
+  body .donde-comprar .container div {
+    width: 44vw;
+    left: 25px;
+  }
+  body .contact-bottom .invert h2 {
+    font-size: 2em;
+  }
+  body .contact-bottom button {
+    font-size: 0.8rem;
+  }
+
+  body.products .full-banner {
+    padding: 6vh;
+  }
+  body.products .full-banner h2,
+body.products .full-banner h3,
+body.products .full-banner a,
+body.products .full-banner hr {
+    margin-left: 40px;
+  }
+  body.products .full-banner img {
+    width: auto;
+    max-height: 358px;
+    margin-top: -54px;
+  }
+  body.products .products-side ul.side-menu {
+    padding-left: 0px;
+  }
+  body.products .products-side .flex.flex-between {
+    flex-direction: column;
+  }
+  body.products .products-content {
+    padding-left: 19px;
+  }
+  body.products .products-content .gallery .item {
+    width: 150px;
+  }
+  body.products .products-content .gallery .item a h2 {
+    font-size: 0.8rem;
+  }
+
+  body.product-detail .detalle {
+    padding: 5vw 3vw;
+  }
+  body.product-detail .detalle .col-10 {
+    position: relative;
+    left: 22px;
+  }
+  body.product-detail .detalle .btn.btn-outline-b {
+    padding: 1vh;
+  }
+  body.product-detail .ventas button {
+    margin: auto;
     display: block;
+  }
+
+  body.learn .tutoriales {
+    margin-top: 0px;
+  }
+  body.learn .consejos {
+    margin-top: 31px;
+  }
+
+  body.tec-support .contactanos .input-group {
+    max-width: 40vw;
+  }
+  body.tec-support .contactanos .input-group input {
+    font-size: 2.3vw;
+  }
+  body.tec-support .contactanos .input-group button {
+    font-size: 3vw;
+  }
+  body.tec-support .manuales .title h2:before {
+    left: -45vw;
+  }
+  body.tec-support .manuales .title h2:after {
+    right: -45vw;
+  }
+  body.tec-support .garantias .input-group {
+    max-width: 40vw;
+  }
+  body.tec-support .garantias .input-group input {
+    font-size: 2.3vw;
+  }
+  body.tec-support .garantias .input-group button {
+    font-size: 3vw;
+  }
+  body.tec-support .faq .right h2 {
+    font-size: 2rem;
+  }
+  body.tec-support .soporte h1 {
+    font-size: 2.7vw;
+  }
+  body.tec-support .soporte .input-group {
+    max-width: 40vw;
+  }
+  body.tec-support .soporte .input-group input {
+    font-size: 2.3vw;
+  }
+  body.tec-support .soporte .input-group button {
+    font-size: 3vw;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .products-grid fieldset legend {
+    font-size: 2vw;
+  }
+
+  body.buy .contactanos .input-group input {
+    font-size: 1.5rem;
+    padding: 1em 0.8em;
+  }
+
+  body.buy .contactanos .input-group button {
+    font-size: 4vw;
+  }
+
+  body.buy .content .companies .company {
+    width: 48%;
+  }
+
+  body.buy .sidebar form .flex {
+    flex-direction: column;
+  }
+
+  .ventas .soporte h1 {
+    font-size: 2.7vw;
+  }
+
+  .ventas .soporte .input-group {
+    max-width: 33vw;
+  }
+
+  .ventas .soporte .input-group input {
+    font-size: 2.3vw;
+  }
+
+  .ventas .soporte .input-group button {
+    font-size: 3vw;
+  }
+
+  footer p,
+footer a {
+    font-size: 1.7vw;
+  }
+
+  footer .btn {
+    font-size: 0.8rem;
+  }
+
+  footer ul {
+    padding-left: 0px;
   }
 }
 /* 
@@ -18,7 +192,7 @@
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .mobile {
-    display: block;
+    display: none;
   }
 }
 /* 

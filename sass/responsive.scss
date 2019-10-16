@@ -10,7 +10,204 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   //CSS
   .mobile {
-    display: block;
+    display: none;
+  }
+
+  body {
+    .full-banner {
+      padding: 5vh;
+
+      h2,
+      h3,
+      a,
+      hr {
+        margin-left: 40px;
+      }
+
+      img {
+        width: auto;
+        max-height: 358px;
+        margin-top: -54px;
+      }
+    }
+    .products-grid fieldset.big img {
+      height: 308px;
+    }
+    .donde-comprar .container div {
+      width: 44vw;
+      left: 25px;
+    }
+
+    .contact-bottom {
+      .invert h2 {
+        font-size: 2em;
+      }
+      button {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  body.products {
+    .full-banner {
+      padding: 6vh;
+      h2,
+      h3,
+      a,
+      hr {
+        margin-left: 40px;
+      }
+      img {
+        width: auto;
+        max-height: 358px;
+        margin-top: -54px;
+      }
+    }
+    .products-side {
+      ul.side-menu {
+        padding-left: 0px;
+      }
+
+      .flex.flex-between {
+        flex-direction: column;
+      }
+    }
+    .products-content {
+      padding-left: 19px;
+
+      .gallery .item {
+        width: 150px;
+        a h2 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  body.product-detail {
+    .detalle {
+      padding: 5vw 3vw;
+
+      .col-10 {
+        position: relative;
+        left: 22px;
+      }
+      .btn.btn-outline-b {
+        padding: 1vh;
+      }
+    }
+    .ventas {
+      button {
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+
+  body.learn {
+    .tutoriales {
+      margin-top: 0px;
+    }
+    .consejos {
+      margin-top: 31px;
+    }
+  }
+
+  body.tec-support {
+
+    .contactanos{
+      .input-group {
+        max-width: 40vw;
+        input {
+          font-size: 2.3vw;
+        }
+        button {
+          font-size: 3vw;
+        }
+      }
+    }
+    .manuales .title h2 {
+      &:before {
+        left: -45vw;
+      }
+      &:after {
+        right: -45vw;
+      }
+    }
+    .garantias .input-group {
+      max-width: 40vw;
+      input {
+        font-size: 2.3vw;
+      }
+      button {
+        font-size: 3vw;
+      }
+    }
+    .faq .right h2 {
+      font-size: 2rem;
+    }
+    .soporte {
+      h1 {
+        font-size: 2.7vw;
+      }
+      .input-group {
+        max-width: 40vw;
+        input {
+          font-size: 2.3vw;
+        }
+        button {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+  .nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .products-grid fieldset legend {
+    font-size: 2vw;
+  }
+
+  body.buy .contactanos .input-group input {
+    font-size: 1.5rem;
+    padding: 1em 0.8em;
+  }
+
+  body.buy .contactanos .input-group button {
+    font-size: 4vw;
+  }
+
+  body.buy .content .companies .company {
+    width: 48%;
+  }
+
+  body.buy .sidebar form .flex {
+    flex-direction: column;
+  }
+  .ventas .soporte h1 {
+    font-size: 2.7vw;
+  }
+  .ventas .soporte .input-group {
+    max-width: 33vw;
+  }
+
+  .ventas .soporte .input-group input {
+    font-size: 2.3vw;
+  }
+  .ventas .soporte .input-group button {
+    font-size: 3vw;
+  }
+
+  footer p,
+  footer a {
+    font-size: 1.7vw;
+  }
+  footer .btn {
+    font-size: 0.8rem;
+  }
+  footer ul {
+    padding-left: 0px;
   }
 }
 
@@ -22,7 +219,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   //CSS
   .mobile {
-    display: block;
+    display: none;
   }
 }
 
@@ -78,11 +275,11 @@
         background-color: white;
         padding: 0 2vw;
         width: 65px;
-        a.nav-link{
+        a.nav-link {
           z-index: 20;
         }
       }
-      ul.submenu-show{
+      ul.submenu-show {
         padding-top: 50px;
         width: 100vw;
         height: 100vh;
@@ -93,13 +290,13 @@
         left: 0px;
         z-index: 10;
         background-color: white;
-        li{
+        li {
           display: block;
           padding-left: 20px;
-          a{
+          a {
             color: #878787;
           }
-          &:nth-child(1){
+          &:nth-child(1) {
             margin-top: 75px;
           }
         }
@@ -349,7 +546,7 @@
         width: 100vw;
         margin-right: 5vw;
         margin-bottom: 5vw;
-        a{
+        a {
           color: black;
           text-decoration: none;
           display: block;
@@ -1429,15 +1626,15 @@
         p {
           color: black;
         }
-        button{
+        button {
           font-weight: 300;
           letter-spacing: 2vw;
         }
       }
-      .col-8{
+      .col-8 {
         z-index: 2;
         margin-top: -35px;
-        h1{
+        h1 {
           font-size: 1.2rem;
           margin: auto;
           display: table;
@@ -1448,7 +1645,7 @@
       }
     }
 
-    .soporte{
+    .soporte {
       padding: 8vw 2vw;
       h1 {
         font-size: 1.5rem;
