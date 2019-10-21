@@ -14,6 +14,29 @@
   }
 
   body {
+    .slide .carousel-caption {
+      margin-left: -80px;
+      top: 4%;
+    }
+
+    .products-grid fieldset legend {
+      font-size: 1.4rem;
+    }
+
+    .products-grid fieldset.big p {
+      font-size: 2.2vw;
+    }
+    .products-grid fieldset.small p {
+      font-size: 1rem;
+      padding-left: 11px;
+    }
+    .products-grid fieldset i {
+      bottom: 3px;
+    }
+    .donde-comprar button{
+      padding: 5px 25px;
+    font-size: 2rem;
+    }
     .full-banner {
       padding: 5vh;
 
@@ -30,6 +53,12 @@
         margin-top: -54px;
       }
     }
+    .formacion-content h2{
+      font-size: 1.4rem;
+    }
+    .formacion-content p{
+      font-size: 1.2rem;
+    }
     .products-grid fieldset.big img {
       height: 308px;
     }
@@ -37,6 +66,10 @@
       width: 44vw;
       left: 25px;
     }
+
+    .support .options button {
+      font-size: 2.3vw;
+  }
 
     .contact-bottom {
       .invert h2 {
@@ -108,14 +141,16 @@
     .tutoriales {
       margin-top: 0px;
     }
+    .tutoriales .container-fluid .carousel-item p, .consejos .container-fluid .carousel-item p, .videos .container-fluid .carousel-item p{
+      font-size: 1.1rem;
+    }
     .consejos {
       margin-top: 31px;
     }
   }
 
   body.tec-support {
-
-    .contactanos{
+    .contactanos {
       .input-group {
         max-width: 40vw;
         input {
@@ -133,6 +168,10 @@
       &:after {
         right: -45vw;
       }
+    }
+    .manuales .articles .item p{
+      font-size: 1.1rem;
+      line-height: 1.5rem;
     }
     .garantias .input-group {
       max-width: 40vw;
@@ -160,9 +199,21 @@
         }
       }
     }
+    .tips .container-fluid .carousel-item h3{
+      font-size: 1.1rem; 
+    }
+    .tips .container-fluid .carousel-item p{
+      font-size: 1.1rem;
+    }
   }
   .nav-link {
     padding: 0.5rem 0.5rem;
+  }
+
+  body.article{
+    p,li,td,tr,a{
+      font-size: 1.1rem;
+    }
   }
 
   .products-grid fieldset legend {
@@ -220,6 +271,27 @@
   //CSS
   .mobile {
     display: none;
+  }
+
+  ul.nav{
+    margin-right: 20px;
+  }
+
+  .container .products-grid{
+    margin-left: 7px;
+  }
+
+  .formacion{
+    .formacion-content{
+      padding: 0px;
+      p {
+        font-size: 1rem;
+      }
+      .container{
+        margin: 0px;
+    padding: 0px;
+      }
+    }
   }
 }
 

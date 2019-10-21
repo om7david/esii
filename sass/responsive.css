@@ -12,6 +12,27 @@
     display: none;
   }
 
+  body .slide .carousel-caption {
+    margin-left: -80px;
+    top: 4%;
+  }
+  body .products-grid fieldset legend {
+    font-size: 1.4rem;
+  }
+  body .products-grid fieldset.big p {
+    font-size: 2.2vw;
+  }
+  body .products-grid fieldset.small p {
+    font-size: 1rem;
+    padding-left: 11px;
+  }
+  body .products-grid fieldset i {
+    bottom: 3px;
+  }
+  body .donde-comprar button {
+    padding: 5px 25px;
+    font-size: 2rem;
+  }
   body .full-banner {
     padding: 5vh;
   }
@@ -26,12 +47,21 @@ body .full-banner hr {
     max-height: 358px;
     margin-top: -54px;
   }
+  body .formacion-content h2 {
+    font-size: 1.4rem;
+  }
+  body .formacion-content p {
+    font-size: 1.2rem;
+  }
   body .products-grid fieldset.big img {
     height: 308px;
   }
   body .donde-comprar .container div {
     width: 44vw;
     left: 25px;
+  }
+  body .support .options button {
+    font-size: 2.3vw;
   }
   body .contact-bottom .invert h2 {
     font-size: 2em;
@@ -88,6 +118,9 @@ body.products .full-banner hr {
   body.learn .tutoriales {
     margin-top: 0px;
   }
+  body.learn .tutoriales .container-fluid .carousel-item p, body.learn .consejos .container-fluid .carousel-item p, body.learn .videos .container-fluid .carousel-item p {
+    font-size: 1.1rem;
+  }
   body.learn .consejos {
     margin-top: 31px;
   }
@@ -106,6 +139,10 @@ body.products .full-banner hr {
   }
   body.tec-support .manuales .title h2:after {
     right: -45vw;
+  }
+  body.tec-support .manuales .articles .item p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
   body.tec-support .garantias .input-group {
     max-width: 40vw;
@@ -131,9 +168,19 @@ body.products .full-banner hr {
   body.tec-support .soporte .input-group button {
     font-size: 3vw;
   }
+  body.tec-support .tips .container-fluid .carousel-item h3 {
+    font-size: 1.1rem;
+  }
+  body.tec-support .tips .container-fluid .carousel-item p {
+    font-size: 1.1rem;
+  }
 
   .nav-link {
     padding: 0.5rem 0.5rem;
+  }
+
+  body.article p, body.article li, body.article td, body.article tr, body.article a {
+    font-size: 1.1rem;
   }
 
   .products-grid fieldset legend {
@@ -193,6 +240,25 @@ footer a {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .mobile {
     display: none;
+  }
+
+  ul.nav {
+    margin-right: 20px;
+  }
+
+  .container .products-grid {
+    margin-left: 7px;
+  }
+
+  .formacion .formacion-content {
+    padding: 0px;
+  }
+  .formacion .formacion-content p {
+    font-size: 1rem;
+  }
+  .formacion .formacion-content .container {
+    margin: 0px;
+    padding: 0px;
   }
 }
 /* 
