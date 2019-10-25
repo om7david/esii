@@ -41,6 +41,10 @@ h2 {
   font-weight: normal;
 }
 
+.btn-inline {
+  padding: 0.375rem 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -97,6 +101,14 @@ header li:nth-last-child(1) {
 .social-float ul li a {
   background-color: black;
   color: white;
+}
+
+#searchBar {
+  margin-bottom: 5px;
+}
+#searchBar button {
+  border: none;
+  background-color: #fccc00;
 }
 
 .slide .carousel-caption {
